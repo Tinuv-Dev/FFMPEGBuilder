@@ -1,0 +1,474 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7D39A17F2BF0F426004349AC /* LibOpenSSHBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D39A17E2BF0F426004349AC /* LibOpenSSHBuilder.swift */; };
+		7D5200002BEB51F300DD5B60 /* LibsmbclientBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D52FFFF2BEB51F300DD5B60 /* LibsmbclientBuilder.swift */; };
+		7D5200102BEB7F1700DD5B60 /* LibSrtBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D52000F2BEB7F1700DD5B60 /* LibSrtBuilder.swift */; };
+		7D5200122BEB803C00DD5B60 /* LibzvbiBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D5200112BEB803C00DD5B60 /* LibzvbiBuilder.swift */; };
+		7D5200142BEB823700DD5B60 /* LibFreeTypeBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D5200132BEB823700DD5B60 /* LibFreeTypeBuilder.swift */; };
+		7D5200162BEB83B100DD5B60 /* LibfribidiBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D5200152BEB83B100DD5B60 /* LibfribidiBuilder.swift */; };
+		7D5200182BEBA0F900DD5B60 /* LibharfbuzzBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D5200172BEBA0F900DD5B60 /* LibharfbuzzBuilder.swift */; };
+		7D52001A2BEBA2AF00DD5B60 /* LibassBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D5200192BEBA2AF00DD5B60 /* LibassBuilder.swift */; };
+		7D52001C2BEBA3E300DD5B60 /* LibfontconfigBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D52001B2BEBA3E300DD5B60 /* LibfontconfigBuilder.swift */; };
+		7D52001E2BEBA48800DD5B60 /* LibblurayBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D52001D2BEBA48800DD5B60 /* LibblurayBuilder.swift */; };
+		7D5200202BEBA72E00DD5B60 /* LibunibreakBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D52001F2BEBA72E00DD5B60 /* LibunibreakBuilder.swift */; };
+		7D5200222BEBBDD400DD5B60 /* LibFFMPEGBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D5200212BEBBDD400DD5B60 /* LibFFMPEGBuilder.swift */; };
+		7D5200242BEBD96D00DD5B60 /* LibmpvBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D5200232BEBD96D00DD5B60 /* LibmpvBuilder.swift */; };
+		7D52FFEE2BEA78C200DD5B60 /* LibShadercBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DB317502BE2226500CBFAB4 /* LibShadercBuilder.swift */; };
+		7D52FFF02BEAFB7700DD5B60 /* LibVulkanBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D52FFEF2BEAFB7700DD5B60 /* LibVulkanBuilder.swift */; };
+		7D52FFF22BEB207100DD5B60 /* LibLcms2Builder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D52FFF12BEB207100DD5B60 /* LibLcms2Builder.swift */; };
+		7D52FFF42BEB3D9E00DD5B60 /* LibplaceboBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D52FFF32BEB3D9E00DD5B60 /* LibplaceboBuilder.swift */; };
+		7D52FFF62BEB43A000DD5B60 /* Libdav1dBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D52FFF52BEB43A000DD5B60 /* Libdav1dBuilder.swift */; };
+		7D52FFF82BEB455B00DD5B60 /* LibGmpBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D52FFF72BEB455B00DD5B60 /* LibGmpBuilder.swift */; };
+		7D52FFFA2BEB47DF00DD5B60 /* LibGnutlsBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D52FFF92BEB47DF00DD5B60 /* LibGnutlsBuilder.swift */; };
+		7D52FFFC2BEB493500DD5B60 /* LibNettleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D52FFFB2BEB493500DD5B60 /* LibNettleBuilder.swift */; };
+		7D52FFFE2BEB4FFB00DD5B60 /* LibReadLineBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D52FFFD2BEB4FFB00DD5B60 /* LibReadLineBuilder.swift */; };
+		7DB317402BE2207700CBFAB4 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DB3173F2BE2207700CBFAB4 /* main.swift */; };
+		7DB317482BE221AF00CBFAB4 /* URL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DB317472BE221AF00CBFAB4 /* URL.swift */; };
+		7DB3174A2BE221F300CBFAB4 /* Library.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DB317492BE221F300CBFAB4 /* Library.swift */; };
+		7DB3174C2BE2222100CBFAB4 /* Builder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DB3174B2BE2222100CBFAB4 /* Builder.swift */; };
+		7DB3174E2BE2225B00CBFAB4 /* FFMPEGBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DB3174D2BE2225B00CBFAB4 /* FFMPEGBuilder.swift */; };
+		7DB317532BE2227A00CBFAB4 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DB317512BE2227A00CBFAB4 /* Utility.swift */; };
+		7DB317542BE2227A00CBFAB4 /* PlatformType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DB317522BE2227A00CBFAB4 /* PlatformType.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		7DB3173A2BE2207700CBFAB4 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		7D39A17E2BF0F426004349AC /* LibOpenSSHBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibOpenSSHBuilder.swift; sourceTree = "<group>"; };
+		7D5200032BEB53D700DD5B60 /* 02-cross_compile.patch */ = {isa = PBXFileReference; lastKnownFileType = text; path = "02-cross_compile.patch"; sourceTree = "<group>"; };
+		7D5200042BEB53D700DD5B60 /* 08-apple-fix-st_atim.patch */ = {isa = PBXFileReference; lastKnownFileType = text; path = "08-apple-fix-st_atim.patch"; sourceTree = "<group>"; };
+		7D5200052BEB53D700DD5B60 /* 07-apple-disable-zlib-pkgconfig.patch */ = {isa = PBXFileReference; lastKnownFileType = text; path = "07-apple-disable-zlib-pkgconfig.patch"; sourceTree = "<group>"; };
+		7D5200062BEB53D700DD5B60 /* 06-crt_extensions.patch */ = {isa = PBXFileReference; lastKnownFileType = text; path = "06-crt_extensions.patch"; sourceTree = "<group>"; };
+		7D5200072BEB53D700DD5B60 /* 01-fix-dependencies.patch */ = {isa = PBXFileReference; lastKnownFileType = text; path = "01-fix-dependencies.patch"; sourceTree = "<group>"; };
+		7D5200082BEB53D700DD5B60 /* 05-no_fork_and_exec.patch */ = {isa = PBXFileReference; lastKnownFileType = text; path = "05-no_fork_and_exec.patch"; sourceTree = "<group>"; };
+		7D5200092BEB53D700DD5B60 /* 04-built-static.patch */ = {isa = PBXFileReference; lastKnownFileType = text; path = "04-built-static.patch"; sourceTree = "<group>"; };
+		7D52000A2BEB53D700DD5B60 /* 03-builtin-heimdal.patch */ = {isa = PBXFileReference; lastKnownFileType = text; path = "03-builtin-heimdal.patch"; sourceTree = "<group>"; };
+		7D52000D2BEB552300DD5B60 /* asn1_compile */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = asn1_compile; sourceTree = "<group>"; };
+		7D52000E2BEB552300DD5B60 /* compile_et */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = compile_et; sourceTree = "<group>"; };
+		7D52000F2BEB7F1700DD5B60 /* LibSrtBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibSrtBuilder.swift; sourceTree = "<group>"; };
+		7D5200112BEB803C00DD5B60 /* LibzvbiBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibzvbiBuilder.swift; sourceTree = "<group>"; };
+		7D5200132BEB823700DD5B60 /* LibFreeTypeBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibFreeTypeBuilder.swift; sourceTree = "<group>"; };
+		7D5200152BEB83B100DD5B60 /* LibfribidiBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibfribidiBuilder.swift; sourceTree = "<group>"; };
+		7D5200172BEBA0F900DD5B60 /* LibharfbuzzBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibharfbuzzBuilder.swift; sourceTree = "<group>"; };
+		7D5200192BEBA2AF00DD5B60 /* LibassBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibassBuilder.swift; sourceTree = "<group>"; };
+		7D52001B2BEBA3E300DD5B60 /* LibfontconfigBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibfontconfigBuilder.swift; sourceTree = "<group>"; };
+		7D52001D2BEBA48800DD5B60 /* LibblurayBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibblurayBuilder.swift; sourceTree = "<group>"; };
+		7D52001F2BEBA72E00DD5B60 /* LibunibreakBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibunibreakBuilder.swift; sourceTree = "<group>"; };
+		7D5200212BEBBDD400DD5B60 /* LibFFMPEGBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibFFMPEGBuilder.swift; sourceTree = "<group>"; };
+		7D5200232BEBD96D00DD5B60 /* LibmpvBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibmpvBuilder.swift; sourceTree = "<group>"; };
+		7D52FFEF2BEAFB7700DD5B60 /* LibVulkanBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibVulkanBuilder.swift; sourceTree = "<group>"; };
+		7D52FFF12BEB207100DD5B60 /* LibLcms2Builder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibLcms2Builder.swift; sourceTree = "<group>"; };
+		7D52FFF32BEB3D9E00DD5B60 /* LibplaceboBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibplaceboBuilder.swift; sourceTree = "<group>"; };
+		7D52FFF52BEB43A000DD5B60 /* Libdav1dBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Libdav1dBuilder.swift; sourceTree = "<group>"; };
+		7D52FFF72BEB455B00DD5B60 /* LibGmpBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibGmpBuilder.swift; sourceTree = "<group>"; };
+		7D52FFF92BEB47DF00DD5B60 /* LibGnutlsBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibGnutlsBuilder.swift; sourceTree = "<group>"; };
+		7D52FFFB2BEB493500DD5B60 /* LibNettleBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibNettleBuilder.swift; sourceTree = "<group>"; };
+		7D52FFFD2BEB4FFB00DD5B60 /* LibReadLineBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibReadLineBuilder.swift; sourceTree = "<group>"; };
+		7D52FFFF2BEB51F300DD5B60 /* LibsmbclientBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibsmbclientBuilder.swift; sourceTree = "<group>"; };
+		7DB3173C2BE2207700CBFAB4 /* FFMPEGBuilder */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = FFMPEGBuilder; sourceTree = BUILT_PRODUCTS_DIR; };
+		7DB3173F2BE2207700CBFAB4 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		7DB317472BE221AF00CBFAB4 /* URL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URL.swift; sourceTree = "<group>"; };
+		7DB317492BE221F300CBFAB4 /* Library.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Library.swift; sourceTree = "<group>"; };
+		7DB3174B2BE2222100CBFAB4 /* Builder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Builder.swift; sourceTree = "<group>"; };
+		7DB3174D2BE2225B00CBFAB4 /* FFMPEGBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FFMPEGBuilder.swift; sourceTree = "<group>"; };
+		7DB317502BE2226500CBFAB4 /* LibShadercBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibShadercBuilder.swift; sourceTree = "<group>"; };
+		7DB317512BE2227A00CBFAB4 /* Utility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
+		7DB317522BE2227A00CBFAB4 /* PlatformType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlatformType.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7DB317392BE2207700CBFAB4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7D5200012BEB53D700DD5B60 /* Patch */ = {
+			isa = PBXGroup;
+			children = (
+				7D5200022BEB53D700DD5B60 /* libsmbclient */,
+			);
+			path = Patch;
+			sourceTree = "<group>";
+		};
+		7D5200022BEB53D700DD5B60 /* libsmbclient */ = {
+			isa = PBXGroup;
+			children = (
+				7D5200032BEB53D700DD5B60 /* 02-cross_compile.patch */,
+				7D5200042BEB53D700DD5B60 /* 08-apple-fix-st_atim.patch */,
+				7D5200052BEB53D700DD5B60 /* 07-apple-disable-zlib-pkgconfig.patch */,
+				7D5200062BEB53D700DD5B60 /* 06-crt_extensions.patch */,
+				7D5200072BEB53D700DD5B60 /* 01-fix-dependencies.patch */,
+				7D5200082BEB53D700DD5B60 /* 05-no_fork_and_exec.patch */,
+				7D5200092BEB53D700DD5B60 /* 04-built-static.patch */,
+				7D52000A2BEB53D700DD5B60 /* 03-builtin-heimdal.patch */,
+			);
+			path = libsmbclient;
+			sourceTree = "<group>";
+		};
+		7D52000B2BEB552300DD5B60 /* libsmbclient */ = {
+			isa = PBXGroup;
+			children = (
+				7D52000C2BEB552300DD5B60 /* bin */,
+			);
+			path = libsmbclient;
+			sourceTree = "<group>";
+		};
+		7D52000C2BEB552300DD5B60 /* bin */ = {
+			isa = PBXGroup;
+			children = (
+				7D52000D2BEB552300DD5B60 /* asn1_compile */,
+				7D52000E2BEB552300DD5B60 /* compile_et */,
+			);
+			path = bin;
+			sourceTree = "<group>";
+		};
+		7DB317332BE2207700CBFAB4 = {
+			isa = PBXGroup;
+			children = (
+				7DB3173E2BE2207700CBFAB4 /* FFMPEGBuilder */,
+				7DB3173D2BE2207700CBFAB4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7DB3173D2BE2207700CBFAB4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7DB3173C2BE2207700CBFAB4 /* FFMPEGBuilder */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7DB3173E2BE2207700CBFAB4 /* FFMPEGBuilder */ = {
+			isa = PBXGroup;
+			children = (
+				7D52000B2BEB552300DD5B60 /* libsmbclient */,
+				7D5200012BEB53D700DD5B60 /* Patch */,
+				7DB317462BE2213C00CBFAB4 /* Extentions */,
+				7DB3174F2BE2226500CBFAB4 /* LibBuilders */,
+				7DB317522BE2227A00CBFAB4 /* PlatformType.swift */,
+				7DB317512BE2227A00CBFAB4 /* Utility.swift */,
+				7DB3174D2BE2225B00CBFAB4 /* FFMPEGBuilder.swift */,
+				7DB317492BE221F300CBFAB4 /* Library.swift */,
+				7DB3174B2BE2222100CBFAB4 /* Builder.swift */,
+				7DB3173F2BE2207700CBFAB4 /* main.swift */,
+			);
+			path = FFMPEGBuilder;
+			sourceTree = "<group>";
+		};
+		7DB317462BE2213C00CBFAB4 /* Extentions */ = {
+			isa = PBXGroup;
+			children = (
+				7DB317472BE221AF00CBFAB4 /* URL.swift */,
+			);
+			path = Extentions;
+			sourceTree = "<group>";
+		};
+		7DB3174F2BE2226500CBFAB4 /* LibBuilders */ = {
+			isa = PBXGroup;
+			children = (
+				7DB317502BE2226500CBFAB4 /* LibShadercBuilder.swift */,
+				7D52FFEF2BEAFB7700DD5B60 /* LibVulkanBuilder.swift */,
+				7D52FFF12BEB207100DD5B60 /* LibLcms2Builder.swift */,
+				7D52FFF32BEB3D9E00DD5B60 /* LibplaceboBuilder.swift */,
+				7D52FFF52BEB43A000DD5B60 /* Libdav1dBuilder.swift */,
+				7D52FFF72BEB455B00DD5B60 /* LibGmpBuilder.swift */,
+				7D52FFFB2BEB493500DD5B60 /* LibNettleBuilder.swift */,
+				7D52FFF92BEB47DF00DD5B60 /* LibGnutlsBuilder.swift */,
+				7D52FFFD2BEB4FFB00DD5B60 /* LibReadLineBuilder.swift */,
+				7D52FFFF2BEB51F300DD5B60 /* LibsmbclientBuilder.swift */,
+				7D52000F2BEB7F1700DD5B60 /* LibSrtBuilder.swift */,
+				7D5200112BEB803C00DD5B60 /* LibzvbiBuilder.swift */,
+				7D5200132BEB823700DD5B60 /* LibFreeTypeBuilder.swift */,
+				7D5200152BEB83B100DD5B60 /* LibfribidiBuilder.swift */,
+				7D5200172BEBA0F900DD5B60 /* LibharfbuzzBuilder.swift */,
+				7D5200192BEBA2AF00DD5B60 /* LibassBuilder.swift */,
+				7D52001B2BEBA3E300DD5B60 /* LibfontconfigBuilder.swift */,
+				7D52001D2BEBA48800DD5B60 /* LibblurayBuilder.swift */,
+				7D52001F2BEBA72E00DD5B60 /* LibunibreakBuilder.swift */,
+				7D5200212BEBBDD400DD5B60 /* LibFFMPEGBuilder.swift */,
+				7D5200232BEBD96D00DD5B60 /* LibmpvBuilder.swift */,
+				7D39A17E2BF0F426004349AC /* LibOpenSSHBuilder.swift */,
+			);
+			path = LibBuilders;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7DB3173B2BE2207700CBFAB4 /* FFMPEGBuilder */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7DB317432BE2207700CBFAB4 /* Build configuration list for PBXNativeTarget "FFMPEGBuilder" */;
+			buildPhases = (
+				7DB317382BE2207700CBFAB4 /* Sources */,
+				7DB317392BE2207700CBFAB4 /* Frameworks */,
+				7DB3173A2BE2207700CBFAB4 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FFMPEGBuilder;
+			productName = FFMPEGBuilder;
+			productReference = 7DB3173C2BE2207700CBFAB4 /* FFMPEGBuilder */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7DB317342BE2207700CBFAB4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					7DB3173B2BE2207700CBFAB4 = {
+						CreatedOnToolsVersion = 15.2;
+					};
+				};
+			};
+			buildConfigurationList = 7DB317372BE2207700CBFAB4 /* Build configuration list for PBXProject "FFMPEGBuilder" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7DB317332BE2207700CBFAB4;
+			productRefGroup = 7DB3173D2BE2207700CBFAB4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7DB3173B2BE2207700CBFAB4 /* FFMPEGBuilder */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7DB317382BE2207700CBFAB4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D5200202BEBA72E00DD5B60 /* LibunibreakBuilder.swift in Sources */,
+				7D52001C2BEBA3E300DD5B60 /* LibfontconfigBuilder.swift in Sources */,
+				7DB317402BE2207700CBFAB4 /* main.swift in Sources */,
+				7D5200242BEBD96D00DD5B60 /* LibmpvBuilder.swift in Sources */,
+				7D5200102BEB7F1700DD5B60 /* LibSrtBuilder.swift in Sources */,
+				7DB317542BE2227A00CBFAB4 /* PlatformType.swift in Sources */,
+				7D52FFF42BEB3D9E00DD5B60 /* LibplaceboBuilder.swift in Sources */,
+				7D52FFEE2BEA78C200DD5B60 /* LibShadercBuilder.swift in Sources */,
+				7D5200002BEB51F300DD5B60 /* LibsmbclientBuilder.swift in Sources */,
+				7D52FFFA2BEB47DF00DD5B60 /* LibGnutlsBuilder.swift in Sources */,
+				7D5200222BEBBDD400DD5B60 /* LibFFMPEGBuilder.swift in Sources */,
+				7D52FFFE2BEB4FFB00DD5B60 /* LibReadLineBuilder.swift in Sources */,
+				7D5200122BEB803C00DD5B60 /* LibzvbiBuilder.swift in Sources */,
+				7D5200182BEBA0F900DD5B60 /* LibharfbuzzBuilder.swift in Sources */,
+				7D5200142BEB823700DD5B60 /* LibFreeTypeBuilder.swift in Sources */,
+				7DB317482BE221AF00CBFAB4 /* URL.swift in Sources */,
+				7DB317532BE2227A00CBFAB4 /* Utility.swift in Sources */,
+				7D52001A2BEBA2AF00DD5B60 /* LibassBuilder.swift in Sources */,
+				7D52FFF62BEB43A000DD5B60 /* Libdav1dBuilder.swift in Sources */,
+				7DB3174A2BE221F300CBFAB4 /* Library.swift in Sources */,
+				7D52001E2BEBA48800DD5B60 /* LibblurayBuilder.swift in Sources */,
+				7D52FFF02BEAFB7700DD5B60 /* LibVulkanBuilder.swift in Sources */,
+				7D52FFFC2BEB493500DD5B60 /* LibNettleBuilder.swift in Sources */,
+				7D5200162BEB83B100DD5B60 /* LibfribidiBuilder.swift in Sources */,
+				7D52FFF22BEB207100DD5B60 /* LibLcms2Builder.swift in Sources */,
+				7DB3174C2BE2222100CBFAB4 /* Builder.swift in Sources */,
+				7D39A17F2BF0F426004349AC /* LibOpenSSHBuilder.swift in Sources */,
+				7DB3174E2BE2225B00CBFAB4 /* FFMPEGBuilder.swift in Sources */,
+				7D52FFF82BEB455B00DD5B60 /* LibGmpBuilder.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		7DB317412BE2207700CBFAB4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7DB317422BE2207700CBFAB4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		7DB317442BE2207700CBFAB4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 59C79A368W;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		7DB317452BE2207700CBFAB4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 59C79A368W;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7DB317372BE2207700CBFAB4 /* Build configuration list for PBXProject "FFMPEGBuilder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7DB317412BE2207700CBFAB4 /* Debug */,
+				7DB317422BE2207700CBFAB4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7DB317432BE2207700CBFAB4 /* Build configuration list for PBXNativeTarget "FFMPEGBuilder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7DB317442BE2207700CBFAB4 /* Debug */,
+				7DB317452BE2207700CBFAB4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7DB317342BE2207700CBFAB4 /* Project object */;
+}
