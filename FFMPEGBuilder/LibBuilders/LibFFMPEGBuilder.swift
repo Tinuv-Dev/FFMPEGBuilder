@@ -362,6 +362,6 @@ class LibFFMPEGBuilder: Builder {
         "--enable-filter=avgblur_vulkan", "--enable-filter=blend_vulkan", "--enable-filter=bwdif_vulkan",
         "--enable-filter=chromaber_vulkan", "--enable-filter=flip_vulkan", "--enable-filter=gblur_vulkan",
         "--enable-filter=hflip_vulkan", "--enable-filter=nlmeans_vulkan", "--enable-filter=overlay_vulkan",
-        "--enable-filter=vflip_vulkan", "--enable-filter=xfade_vulkan","--enable-filter=subtitles","--enable-filter=drawtext","--enable-filter=drawbox"
+        "--enable-filter=vflip_vulkan", "--enable-filter=xfade_vulkan","--enable-filter=subtitles","--enable-filter=drawbox"
     ]
 }

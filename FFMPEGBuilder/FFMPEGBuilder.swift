@@ -5,8 +5,8 @@ class FFMPEGBuilder {
     static let workDirectory = "file:///Users/tinuv/Downloads/build"
     static let buildDirectory = workDirectory + "/build"
     static let distDirectory = workDirectory + "/dist"
-    static let patchDirector = URL(string: "/Users/tinuv/Developer/Script/FFMPEGBuilder/FFMPEGBuilder/Patch")!
-    static let libsmbclientDepDirector = URL(string: "/Users/tinuv/Developer/Script/FFMPEGBuilder/FFMPEGBuilder/libsmbclient")!
+    static let patchDirector = URL(string: "/Users/tinuv/Developer/Apple/Other/FFMPEGBuilder/FFMPEGBuilder/Patch")!
+    static let libsmbclientDepDirector = URL(string: "/Users/tinuv/Developer/Apple/Other/FFMPEGBuilder/FFMPEGBuilder/libsmbclient")!
     static let platforms = PlatformType.allCases.filter { ![.watchos, .watchsimulator, .android].contains($0) }
     static var ffmpegConfiguers = [String]()
 
