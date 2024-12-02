@@ -29,7 +29,6 @@ enum Library: String, CaseIterable {
     case libunibreak
     case ffmpeg
     case libmpv
-    case openssh
 }
 
 extension Library {
@@ -77,8 +76,6 @@ extension Library {
                 "https://github.com/FFmpeg/FFmpeg"
             case .libmpv:
                 "https://github.com/mpv-player/mpv"
-            case .openssh:
-                "https://github.com/openssh/openssh-portable"
         }
     }
 
@@ -113,7 +110,7 @@ extension Library {
             case .libfribidi:
                 "v1.0.12"
             case .libharfbuzz:
-                "5.3.1"
+                "8.5.0"
             case .libass:
                 "0.17.1-branch"
             case .libfontconfig:
@@ -123,11 +120,9 @@ extension Library {
             case .libunibreak:
                 "libunibreak_6_1"
             case .ffmpeg:
-                "n6.1"
+                "n7.0.2"
             case .libmpv:
-                "v0.37.0"
-            case .openssh:
-                "V_7_2_P2"
+                "v0.39.0"
         }
     }
 
@@ -175,8 +170,6 @@ extension Library {
                 LibFFMPEGBuilder(lib: self)
             case .libmpv:
                 LibmpvBuilder(lib: self)
-            case .openssh:
-                LibOpenSSHBuilder(lib: self)
         }
     }
 
@@ -213,10 +206,8 @@ extension Library {
                  .libsrt,
                  .libzvbi,
                  .vulkan: return true
-            // case .openssl:
-            //    return false
-            case .libsmbclient:
-                return true
+            //case .libsmbclient:
+            //    return true
             default:
                 return false
         }

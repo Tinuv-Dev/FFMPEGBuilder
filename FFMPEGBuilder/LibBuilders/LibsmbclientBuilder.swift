@@ -16,6 +16,10 @@ class LibsmbclientBuilder: Builder {
     override func cFlags(platform: PlatformType, arch: ArchType) -> [String] {
         var cFlags = super.cFlags(platform: platform, arch: arch)
         cFlags.append("-Wno-error=implicit-function-declaration")
+        cFlags.append("-D_DARWIN_USE_64_BIT_INODE")
+        cFlags.append("-D_FILE_OFFSET_BITS=64")
+        // 新添加了选项
+        cFlags.append("-Wno-int-conversion")
         return cFlags
     }
 
@@ -25,6 +29,7 @@ class LibsmbclientBuilder: Builder {
             + (lib.libSourceDirectory + "buildtools/bin").path)
         env["PYTHONHASHSEED"] = "1"
         env["WAF_MAKE"] = "1"
+        env["ac_cv_sizeof_off_t"] = "8"
         return env
     }
 

@@ -21,6 +21,7 @@ class LibassBuilder: Builder {
                 "--disable-shared",
                 "--disable-fast-install",
                 "--disable-dependency-tracking",
+                "--disable-libunibreak",
                 "--host=\(platform.host(arch: arch))",
                 "--prefix=\(lib.thin(platform: platform, arch: arch).path)",
             ]

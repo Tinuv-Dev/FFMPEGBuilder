@@ -8,6 +8,15 @@
 import Foundation
 
 class LibFFMPEGBuilder: Builder {
+    
+    override func platforms() -> [PlatformType] {
+        // Placebo编译maccatalyst的时候，vulkan会报找不到UIKit的问题，所以要先屏蔽。
+        super.platforms().filter {
+            ![].contains($0)
+        }
+    }
+    
+    
     override func preCompile() {
         super.preCompile()
         if Utility.shell("which nasm") == nil {
@@ -28,7 +37,7 @@ class LibFFMPEGBuilder: Builder {
     }
     
     override func flagsDependencelibrarys() -> [Library] {
-        [.gmp, .nettle, .gnutls, .libsmbclient]
+        [.gmp, .nettle, .gnutls, .libsmbclient,/*.libsleef*/.lcms2,.libbluray,.libfontconfig,.libfreetype,.libdav1d,.libplacebo,.libshaderc,.libsrt,.libzvbi]
     }
     
     override func frameworks() -> [String] {
@@ -216,11 +225,14 @@ class LibFFMPEGBuilder: Builder {
             arguments.append("--target-os=darwin")
             arguments.append("--enable-libxml2")
         }
+        //arguments.append("-DCMAKE_C_VISIBILITY_PRESET=hidden")
+        //arguments.append("-DCMAKE_CXX_VISIBILITY_PRESET=hidden")
         // arguments.append(arch.cpu())
         /**
          aacpsdsp.o), building for Mac Catalyst, but linking in object file built for
          x86_64 binaries are built without ASM support, since ASM for x86_64 is actually x86 and that confuses `xcodebuild -create-xcframework` https://stackoverflow.com/questions/58796267/building-for-macos-but-linking-in-object-file-built-for-free-standing/59103419#59103419
          */
+        //arguments.append("--disable-libsmbclient")
         if platform == .maccatalyst || arch == .x86_64 {
             arguments.append("--disable-neon")
             arguments.append("--disable-asm")
@@ -292,6 +304,7 @@ class LibFFMPEGBuilder: Builder {
     private let ffmpegConfiguers = [
         // Configuration options:
         "--enable-gpl",
+        //"--enable-libtorch",
         "--disable-armv5te", "--disable-armv6", "--disable-armv6t2",
         "--disable-bzlib", "--disable-gray", "--disable-iconv", "--disable-linux-perf",
         "--disable-shared", "--disable-small", "--disable-swscale-alpha", "--disable-symver", "--disable-xlib",
@@ -362,6 +375,6 @@ class LibFFMPEGBuilder: Builder {
         "--enable-filter=avgblur_vulkan", "--enable-filter=blend_vulkan", "--enable-filter=bwdif_vulkan",
         "--enable-filter=chromaber_vulkan", "--enable-filter=flip_vulkan", "--enable-filter=gblur_vulkan",
         "--enable-filter=hflip_vulkan", "--enable-filter=nlmeans_vulkan", "--enable-filter=overlay_vulkan",
-        "--enable-filter=vflip_vulkan", "--enable-filter=xfade_vulkan","--enable-filter=subtitles","--enable-filter=drawbox"
+        "--enable-filter=vflip_vulkan", "--enable-filter=xfade_vulkan","--enable-filter=subtitles","--enable-filter=drawbox","--enable-filter=myfilter"
     ]
 }

@@ -56,7 +56,7 @@ class Builder {
 
     func postCompile() {}
 
-    func postBuild(platform: PlatformType, arch: ArchType) {}
+    func postBuild(platform _: PlatformType, arch _: ArchType) {}
 
     func compile() {
         for platform in platforms() {
@@ -172,6 +172,21 @@ class Builder {
     func flagsDependencelibrarys() -> [Library] { [] }
 
     func arguments(platform _: PlatformType, arch _: ArchType) -> [String] { [] }
+
+    func printCommd(arguments: [String], environment: [String: String], buildURL _: String) {
+        var cmd = ""
+        for (key, value) in environment {
+            cmd += "\(key)=\"\(value)\" "
+        }
+        cmd += "\n"
+        cmd += "cmake  \\\n"
+        for arg in arguments {
+            cmd += "\(arg) \\\n"
+        }
+        print("-----------------")
+        print(cmd)
+        print("-----------------")
+    }
 
     func configure(buildURL: URL, env: [String: String], platform: PlatformType, arch: ArchType) throws {
         let makeLists = lib.libSourceDirectory + "CMakeLists.txt"
@@ -343,7 +358,7 @@ extension Builder {
             if !FileManager.default.fileExists(atPath: prefix.path) {
                 return nil
             }
-            let libname = framework.hasPrefix("lib") || framework.hasPrefix("Lib") ? framework : "lib" + framework
+            let libname = framework=="libshaderccombined" ? "libshaderc_combined": framework.hasPrefix("lib") || framework.hasPrefix("Lib") ? framework : "lib" + framework
             var libPath = prefix + ["lib", "\(libname).a"]
             if !FileManager.default.fileExists(atPath: libPath.path) {
                 libPath = prefix + ["lib", "\(libname).dylib"]

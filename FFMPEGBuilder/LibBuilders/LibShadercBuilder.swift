@@ -56,7 +56,7 @@ class LibShadercBuilder: Builder {
     }
 
     override func frameworks() -> [String] {
-        ["libshaderc_combined"]
+        ["libshaderccombined"]
     }
 
     override func postBuild(platform: PlatformType, arch: ArchType) {
@@ -64,8 +64,8 @@ class LibShadercBuilder: Builder {
         let thinDir = lib.thin(platform: platform, arch: arch)
         let pkgconfig = thinDir + "lib/pkgconfig"
         do {
-            try FileManager.default.moveItem(at: pkgconfig + "shaderc.pc", to: pkgconfig + "shaderc_shared.pc")
-            try FileManager.default.moveItem(at: pkgconfig + "shaderc_combined.pc", to: pkgconfig + "shaderc.pc")
+            try FileManager.default.moveItem(at: pkgconfig + "shaderc.pc", to: pkgconfig + "shadercshared.pc")
+            try FileManager.default.moveItem(at: pkgconfig + "shaderccombined.pc", to: pkgconfig + "shaderc.pc")
         } catch {
             print("LibShadercBuilder moveItem error \(error)")
         }

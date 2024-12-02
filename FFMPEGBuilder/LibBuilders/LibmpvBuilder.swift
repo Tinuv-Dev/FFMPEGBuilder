@@ -32,6 +32,12 @@ class LibmpvBuilder: Builder {
     override func flagsDependencelibrarys() -> [Library] {
         [.gmp, .libsmbclient]
     }
+    
+    override func cFlags(platform: PlatformType, arch: ArchType) -> [String] {
+        var cFlags = super.cFlags(platform: platform, arch: arch)
+        cFlags.append("-Wno-incompatible-function-pointer-types")
+        return cFlags
+    }
 
     override func arguments(platform: PlatformType, arch: ArchType) -> [String] {
         var array = [
@@ -56,6 +62,8 @@ class LibmpvBuilder: Builder {
             array.append("-Dvideotoolbox-gl=disabled")
             array.append("-Dswift-build=disabled")
             array.append("-Daudiounit=enabled")
+            array.append("-Dcoreaudio=disabled")
+            array.append("-Davfoundation=disabled")
             if platform == .maccatalyst {
                 array.append("-Dcocoa=disabled")
                 array.append("-Dcoreaudio=disabled")
